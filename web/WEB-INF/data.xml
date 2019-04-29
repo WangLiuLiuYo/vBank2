@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+      <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="dataSource">
+          <property name="user" value="root"/>
+          <property name="password" value="wang66"/>
+          <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/vbank2?serverTimezone=UTC&amp;useSSL=false"/>
+          <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
+      </bean>
+</beans>
